@@ -549,9 +549,8 @@ margin-bottom: 20px;
     display: flex;
 }
 .sub-input{
-    width: 358px;
-    height: 50px;
-    padding: 0;
+    width: 342px;
+    padding: 0px 0px 0px 16px;
     margin-right: 12px;
     background-color: var(--secondary-bg-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -568,7 +567,9 @@ margin-bottom: 20px;
     position: relative;
     padding: 10px 28px;
     width: 200px;
+    height: 50px;
     text-align: left;
+    letter-spacing: 0.06em;
 }
 .iconsend{
     position: absolute;
