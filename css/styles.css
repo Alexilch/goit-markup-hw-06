@@ -157,7 +157,7 @@ button{
 .menu-link.current,
 .menu-link.icon:hover{
     color: var(--hover-color);
-    fill:var(--hover-color);
+    fill:var(--overlay);
 }
 .current:after{
     content: "";
@@ -182,6 +182,7 @@ button{
     margin-left: 10px;
 }
 .icon{
+    fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*==============hero=============*/
@@ -466,7 +467,7 @@ button{
     margin: 0;
     font-size: 18px;
     line-height: 1.5;
-  }
+}
 /*================footer==================*/
 .footer{
     background-color:var(--secondary-bg-color);
@@ -520,13 +521,12 @@ margin-bottom: 20px;
 }
 .footer-wrap{
     display: flex;
+    align-items: baseline;
 }
 .footer-adress{
     margin-right: 70px;
 }
 .footer-social{
-    margin-top: 12px;
-
     margin-right: 93px;
 }
 .footer-social .social-list-icon{
@@ -539,13 +539,9 @@ margin-bottom: 20px;
 .footer-social .social-list-link:focus{
     background-color: var(--hover-color);
 }
-.subscribe{
-    margin-top: 12px;
-}
 .subscribe-title{
     text-transform: uppercase;
 }
-
 /*================footer-form==================*/
 .footer-form{
     display: flex;
@@ -662,7 +658,8 @@ margin-bottom: 20px;
 .form-input:focus,
 .form-input:hover,
 .form-field:focus,
-.form-field:hover{
+.form-field:hover,
+.form-field:focus-within > .form-icon{
     border-color:var(--hover-color);
     cursor: pointer;
     fill:var(--hover-color);
